@@ -1,0 +1,102 @@
+/*basic style*/
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    h1 {
+        margin-bottom: 15px;
+        text-align: center;
+        color: black;
+        font-family:Brush Script MT, Brush Script Std, cursive ;
+        font-size: 50px;
+    }
+
+    section {
+        position: relative;
+        padding: 15px;
+        width: 90%;
+    }
+
+    p {
+        position: relative;
+        clear: right;
+    }
+
+    div {
+        position: relative;
+        background-color: gray;
+        border: 3.5px solid black;
+        width: 100%;
+    }
+
+    .sub1 {
+        background-color: #FFB6C1;
+    }
+
+    .sub2 {
+        color: white;
+        background-color: #FF0000;
+    }
+
+    .sub3 {
+        background-color: rgb(223, 212, 121);
+    }
+
+    .sub1 , .sub2 , .sub3 { 
+        font-family: Courier, monospace;
+        padding: 7px;
+    
+        width: 100px;
+        float: right;
+        margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+    }
+
+    .content {
+        padding: 5px;
+        background-color: gray;
+        font-family: serif;
+        color: black;
+        margin: 3px ;
+    }
+
+
+    /*desktop */
+    @media (min-width: 992px) {
+        .column-lg-4 {
+            float: left;
+            width: 33.33%;
+        }
+    }
+
+    /*tablet */
+    @media (min-width: 768px) and (max-width: 991px) {
+        .colmn-md-6 {
+            float: left;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .colmn-md-12 {
+            float: left;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    /*mobile */
+    @media (max-width: 767px) {
+        .colmn-sm-12 {
+            float: left;
+            width: 100%;
+        }
+    }
